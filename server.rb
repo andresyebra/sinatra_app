@@ -1,17 +1,29 @@
 require 'rubygems'
-
-# If you're using bundler, you will need to add this
 require 'bundler/setup'
-
 require 'sinatra'
 
+#Settings
+
+#Port: 3000
 set :port, 3000 
+
+#Environment: production
 set :environment, :production 
 
+
+#Routes 
+
+#GET
 get '/' do
   "Hello world, it's #{Time.now} at the server!"
 end
 
+get '/params' do
+  "GET Params:#{params}"
+end
 
 
-https://leonardofaria.net/2016/07/26/todo-list-using-sinatra-rest-api/
+#POST
+post '/params' do
+  "POST Params:#{params}"
+end
