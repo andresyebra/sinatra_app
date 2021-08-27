@@ -11,10 +11,11 @@ set :environment, :production
 #Routes 
 
 #GET
+#Get method
 get '/' do
   "Hello world, it's #{Time.now} at the server!"
 end
-
+#Get method with params
 get '/params' do
   "GET Params:#{params}"
 end
