@@ -3,14 +3,11 @@ require 'bundler/setup'
 require 'sinatra'
 
 #Settings
-
 #Port: 3000
 set :port, 3000 
 
 #Environment: production
-set :environment, :production 
-
-
+set :environment, :production
 #Routes 
 
 #GET
@@ -21,7 +18,6 @@ end
 get '/params' do
   "GET Params:#{params}"
 end
-
 
 #POST
 post '/params' do
