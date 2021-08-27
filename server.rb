@@ -21,6 +21,7 @@ get '/params' do
 end
 
 #POST
+# POST method with params
 post '/params' do
   "POST Params:#{params}"
 end
